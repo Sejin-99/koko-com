@@ -1,0 +1,104 @@
+.settinghead__icon i {
+  margin-left: 15px;
+}
+
+.chattingdate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 30px;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+#chat-screen {
+  background-color: #abc1d1;
+  height: 1000vh;
+}
+
+.main-chart {
+  margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.8s linear;
+}
+.chart__mesa {
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+  margin-left: 50px;
+}
+
+.chart__mesa img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.chart__aut {
+  margin-left: 20px;
+}
+.chart__autname {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+  display: block;
+  margin-bottom: 50px;
+}
+.chart__auttext {
+  background-color: white;
+  padding: 8px 10px;
+  border-radius: 15px;
+}
+.chart__auttime {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.chart__re {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.chart__reme {
+  margin-right: 20px;
+}
+.chart__remetime {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.chart__remetext {
+  background-color: var(--yellow);
+  padding: 8px 10px;
+  border-radius: 15px;
+}
+.reply .reply__column:first-child,
+.reply .fa-smile-wink,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile-wink,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 98vw;
+  transform: translateX(-10%) translateY(-80px);
+}
+
+.reply:focus-within {
+  transform: translateY(60px);
+}
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
